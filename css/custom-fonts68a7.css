@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'menu';
+	src: url('../fonts/GochiHand-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'comic';
+	src: url('../ComicKings-Jzgn.html');
+	src: url('../ComicKings-Jzgnd41d.html#iefix') format('embedded-opentype'),
+		/* url('../fonts/ComicKings-Jzgn.woff') format('woff'), */
+		 url('../fonts/ComicKings-Jzgn.ttf') format('truetype'),
+		 url('../ComicKings-Jzgn-2.html#ComicKings-Jzgn') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'helvetica';
+	src: url('../HelveticaMedium.html');
+	src: url('../HelveticaMediumd41d.html#iefix') format('embedded-opentype'),
+		 /*url('../fonts/HelveticaMedium.woff') format('woff'),*/
+		 url('../fonts/HelveticaMedium.ttf') format('truetype'),
+		 url('../HelveticaMedium-2.html#HelveticaMedium') format('svg');
+	font-style: normal;
+	font-weight: 500;
+}
+
+
+@font-face {
+	font-family: 'asap';
+	src: url('../AsapCondensed-Regular.html');
+	src: url('../AsapCondensed-Regulard41d.html#iefix') format('embedded-opentype'),
+		/* url('../fonts/AsapCondensed-Regular.woff') format('woff'), */
+		 url('../fonts/AsapCondensed-Regular.ttf') format('truetype'),
+		 url('../AsapCondensed-Regular-2.html#AsapCondensed-Regular') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+@font-face {
+	font-family: 'asap';
+	src: url('../AsapCondensed-Bold.html');
+	src: url('../AsapCondensed-Boldd41d.html#iefix') format('embedded-opentype'),
+	/*	 url('../fonts/AsapCondensed-Bold.woff') format('woff'), */
+		 url('../fonts/AsapCondensed-Bold.ttf') format('truetype'),
+		 url('../AsapCondensed-Bold-2.html#AsapCondensed-Bold') format('svg');
+	font-style: normal;
+	font-weight: 700;
+}
