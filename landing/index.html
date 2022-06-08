@@ -1,0 +1,2115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/logo.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta name="description"
+        content="Crypstarter utilizes Treasury Reserves to enable long-term price consistency and scarcity within an infinite supply system">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link href="css/css2_1.css" rel="stylesheet">
+    <link href="css/css2.css" rel="stylesheet">
+    <title>Shiba King Staking</title>
+    <link href="css/main.3318e23f.chunk.css" rel="stylesheet">
+    <style data-styled="active" data-styled-version="5.3.3"></style>
+    <style data-styled="active" data-styled-version="5.3.3"></style>
+    <style data-jss="" data-meta="MuiCssBaseline">
+        html {
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        strong,
+        b {
+            font-weight: 700;
+        }
+
+        body {
+            color: #FCFCFC;
+            margin: 0;
+            font-size: 0.875rem;
+            background: #292929;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.43;
+            background-color: #292929;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+            }
+        }
+
+        body::backdrop {
+            background-color: #292929;
+        }
+
+        @font-face {
+            font-family: Square;
+            font-style: normal;
+            font-display: swap;
+            font-weight: 200;
+            src:
+                local('EuclidSquare'),
+                local('EuclidSquare-Regular'),
+                url(/static/media/EuclidSquare-Regular.5c5dedb1.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+        }
+
+        @font-face {
+            font-family: Square;
+            font-style: normal;
+            font-display: swap;
+            font-weight: 300;
+            src:
+                local('EuclidSquare'),
+                local('EuclidSquare-Light'),
+                url(/static/media/EuclidSquare-Light.62b29a70.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+        }
+
+        @font-face {
+            font-family: Square;
+            font-style: medium;
+            font-display: swap;
+            font-weight: 200;
+            src:
+                local('EuclidSquare'),
+                local('EuclidSquare-Medium'),
+                url(/static/media/EuclidSquare-Medium.8026c8db.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+        }
+
+        @font-face {
+            font-family: Square;
+            font-style: bold;
+            font-display: swap;
+            font-weight: 700;
+            src:
+                local('EuclidSquare-Bold'),
+                local('EuclidSquare-Bold'),
+                url(/static/media/EuclidSquare-Bold.22d0be7b.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+        }
+
+        @font-face {
+            font-family: Square;
+            font-style: italic;
+            font-display: swap;
+            font-weight: 400;
+            src:
+                local('EuclidSquare-Italic'),
+                local('EuclidSquare-Italic'),
+                url(/static/media/EuclidSquare-Italic.2537e631.woff) format('woff');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF;
+        }
+
+        breakpoints {
+            values: [object Object];
+        }
+    </style>
+    <style data-jss="" data-meta="MuiPaper">
+        .MuiPaper-root {
+            color: #FCFCFC;
+            transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            backdrop-filter: blur(33px);
+            background-color: #292929;
+        }
+
+        .MuiPaper-root.ohm-card {
+            width: 97%;
+            padding: 20px 30px 30px 30px;
+            overflow: hidden;
+            max-width: 833px;
+            border-radius: 10px;
+            margin-bottom: 1.8rem;
+            background-color: #0005;
+        }
+
+        .MuiPaper-root.ohm-modal {
+            background-color: #24242699;
+        }
+
+        .MuiPaper-root.ohm-menu {
+            margin: 0px;
+            padding: 22px 0px;
+            border-radius: 10px;
+            backdrop-filter: blur(33px);
+            background-color: #292929;
+        }
+
+        .MuiPaper-root.ohm-popover {
+            color: #FCFCFC;
+            backdrop-filter: blur(15px);
+            background-color: rgba(54, 56, 64, 0.99);
+        }
+
+        .MuiPaper-root.ohm-chart-card {
+            width: 97%;
+            padding: 20px 0px;
+            max-width: 700px;
+            white-space: nowrap;
+            margin-bottom: 1.8rem;
+        }
+
+        .MuiPaper-rounded {
+            border-radius: 4px;
+        }
+
+        .MuiPaper-outlined {
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .MuiPaper-elevation0 {
+            box-shadow: none;
+        }
+
+        .MuiPaper-elevation1 {
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation2 {
+            box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation3 {
+            box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation4 {
+            box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation5 {
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation6 {
+            box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation7 {
+            box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.2), 0px 7px 10px 1px rgba(0, 0, 0, 0.14), 0px 2px 16px 1px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation8 {
+            box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation9 {
+            box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.2), 0px 9px 12px 1px rgba(0, 0, 0, 0.14), 0px 3px 16px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation10 {
+            box-shadow: 0px 6px 6px -3px rgba(0, 0, 0, 0.2), 0px 10px 14px 1px rgba(0, 0, 0, 0.14), 0px 4px 18px 3px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation11 {
+            box-shadow: 0px 6px 7px -4px rgba(0, 0, 0, 0.2), 0px 11px 15px 1px rgba(0, 0, 0, 0.14), 0px 4px 20px 3px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation12 {
+            box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 12px 17px 2px rgba(0, 0, 0, 0.14), 0px 5px 22px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation13 {
+            box-shadow: 0px 7px 8px -4px rgba(0, 0, 0, 0.2), 0px 13px 19px 2px rgba(0, 0, 0, 0.14), 0px 5px 24px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation14 {
+            box-shadow: 0px 7px 9px -4px rgba(0, 0, 0, 0.2), 0px 14px 21px 2px rgba(0, 0, 0, 0.14), 0px 5px 26px 4px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation15 {
+            box-shadow: 0px 8px 9px -5px rgba(0, 0, 0, 0.2), 0px 15px 22px 2px rgba(0, 0, 0, 0.14), 0px 6px 28px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation16 {
+            box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation17 {
+            box-shadow: 0px 8px 11px -5px rgba(0, 0, 0, 0.2), 0px 17px 26px 2px rgba(0, 0, 0, 0.14), 0px 6px 32px 5px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation18 {
+            box-shadow: 0px 9px 11px -5px rgba(0, 0, 0, 0.2), 0px 18px 28px 2px rgba(0, 0, 0, 0.14), 0px 7px 34px 6px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation19 {
+            box-shadow: 0px 9px 12px -6px rgba(0, 0, 0, 0.2), 0px 19px 29px 2px rgba(0, 0, 0, 0.14), 0px 7px 36px 6px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation20 {
+            box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 20px 31px 3px rgba(0, 0, 0, 0.14), 0px 8px 38px 7px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation21 {
+            box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.2), 0px 21px 33px 3px rgba(0, 0, 0, 0.14), 0px 8px 40px 7px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation22 {
+            box-shadow: 0px 10px 14px -6px rgba(0, 0, 0, 0.2), 0px 22px 35px 3px rgba(0, 0, 0, 0.14), 0px 8px 42px 7px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation23 {
+            box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.2), 0px 23px 36px 3px rgba(0, 0, 0, 0.14), 0px 9px 44px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .MuiPaper-elevation24 {
+            box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+        }
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiBox">
+    </style>
+    <style data-jss="" data-meta="MuiTypography">
+        .MuiTypography-root {
+            margin: 0;
+        }
+
+        .MuiTypography-root.grid-message-typography {
+            color: #A3A3A3;
+        }
+
+        .MuiTypography-root.chain-highlight {
+            color: #DADADA;
+        }
+
+        .MuiTypography-root.current {
+            color: #F8CC82;
+        }
+
+        .MuiTypography-body2 {
+            font-size: 0.875rem;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.43;
+        }
+
+        .MuiTypography-body1 {
+            font-size: 1rem;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        .MuiTypography-caption {
+            font-size: 0.75rem;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.66;
+        }
+
+        .MuiTypography-button {
+            font-size: 1.125rem;
+            font-family: Poppins;
+            font-weight: 500;
+            line-height: 1.75;
+            text-transform: none;
+        }
+
+        @media (min-width:600px) {
+            .MuiTypography-button {
+                font-size: 1.1429rem;
+            }
+        }
+
+        @media (min-width:960px) {
+            .MuiTypography-button {
+                font-size: 1.2857rem;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .MuiTypography-button {
+                font-size: 1.2857rem;
+            }
+        }
+
+        .MuiTypography-h1 {
+            font-size: 2.15rem;
+            font-family: Poppins;
+            font-weight: 300;
+            line-height: 1.167;
+        }
+
+        @media (min-width:600px) {
+            .MuiTypography-h1 {
+                font-size: 2.7849rem;
+            }
+        }
+
+        @media (min-width:960px) {
+            .MuiTypography-h1 {
+                font-size: 2.9991rem;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .MuiTypography-h1 {
+                font-size: 3.2134rem;
+            }
+        }
+
+        .MuiTypography-h2 {
+            font-size: 1.65rem;
+            font-family: Poppins;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 1.3px;
+        }
+
+        @media (min-width:600px) {
+            .MuiTypography-h2 {
+                font-size: 1.875rem;
+            }
+        }
+
+        @media (min-width:960px) {
+            .MuiTypography-h2 {
+                font-size: 2.0833rem;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .MuiTypography-h2 {
+                font-size: 2.2917rem;
+            }
+        }
+
+        .MuiTypography-h3 {
+            font-size: 1.375rem;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.167;
+        }
+
+        @media (min-width:600px) {
+            .MuiTypography-h3 {
+                font-size: 1.4996rem;
+            }
+        }
+
+        @media (min-width:960px) {
+            .MuiTypography-h3 {
+                font-size: 1.7138rem;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .MuiTypography-h3 {
+                font-size: 1.7138rem;
+            }
+        }
+
+        .MuiTypography-h4 {
+            font-size: 1.25rem;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.235;
+        }
+
+        @media (min-width:600px) {
+            .MuiTypography-h4 {
+                font-size: 1.417rem;
+            }
+        }
+
+        @media (min-width:960px) {
+            .MuiTypography-h4 {
+                font-size: 1.417rem;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .MuiTypography-h4 {
+                font-size: 1.417rem;
+            }
+        }
+
+        .MuiTypography-h5 {
+            font-size: 1.125rem;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.334;
+            letter-spacing: 0.4px;
+        }
+
+        @media (min-width:600px) {
+            .MuiTypography-h5 {
+                font-size: 1.1244rem;
+            }
+        }
+
+        @media (min-width:960px) {
+            .MuiTypography-h5 {
+                font-size: 1.3118rem;
+            }
+        }
+
+        @media (min-width:1280px) {
+            .MuiTypography-h5 {
+                font-size: 1.3118rem;
+            }
+        }
+
+        .MuiTypography-h6 {
+            font-size: 1rem;
+            font-family: Poppins;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .MuiTypography-subtitle1 {
+            font-size: 1rem;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 1.75;
+        }
+
+        .MuiTypography-subtitle2 {
+            font-size: 0.875rem;
+            font-family: Poppins;
+            font-weight: 500;
+            line-height: 1.57;
+        }
+
+        .MuiTypography-overline {
+            font-size: 0.75rem;
+            font-family: Poppins;
+            font-weight: 400;
+            line-height: 2.66;
+            text-transform: uppercase;
+        }
+
+        .MuiTypography-srOnly {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        .MuiTypography-alignLeft {
+            text-align: left;
+        }
+
+        .MuiTypography-alignCenter {
+            text-align: center;
+        }
+
+        .MuiTypography-alignRight {
+            text-align: right;
+        }
+
+        .MuiTypography-alignJustify {
+            text-align: justify;
+        }
+
+        .MuiTypography-noWrap {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .MuiTypography-gutterBottom {
+            margin-bottom: 0.35em;
+        }
+
+        .MuiTypography-paragraph {
+            margin-bottom: 16px;
+        }
+
+        .MuiTypography-colorInherit {
+            color: inherit;
+        }
+
+        .MuiTypography-colorPrimary {
+            color: #FCFCFC;
+        }
+
+        .MuiTypography-colorSecondary {
+            color: #f50057;
+        }
+
+        .MuiTypography-colorTextPrimary {
+            color: #FCFCFC;
+        }
+
+        .MuiTypography-colorTextSecondary {
+            color: #A3A3A3;
+        }
+
+        .MuiTypography-colorError {
+            color: #f44336;
+        }
+
+        .MuiTypography-displayInline {
+            display: inline;
+        }
+
+        .MuiTypography-displayBlock {
+            display: block;
+        }
+    </style>
+    <style data-jss="" data-meta="MuiSvgIcon">
+        .MuiSvgIcon-root {
+            fill: currentColor;
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            font-size: 1.5rem;
+            transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            flex-shrink: 0;
+            user-select: none;
+        }
+
+        .MuiSvgIcon-colorPrimary {
+            color: #FCFCFC;
+        }
+
+        .MuiSvgIcon-colorSecondary {
+            color: #f50057;
+        }
+
+        .MuiSvgIcon-colorAction {
+            color: #fff;
+        }
+
+        .MuiSvgIcon-colorError {
+            color: #f44336;
+        }
+
+        .MuiSvgIcon-colorDisabled {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .MuiSvgIcon-fontSizeInherit {
+            font-size: inherit;
+        }
+
+        .MuiSvgIcon-fontSizeSmall {
+            font-size: 1.25rem;
+        }
+
+        .MuiSvgIcon-fontSizeLarge {
+            font-size: 2.1875rem;
+        }
+    </style>
+    <style data-jss="" data-meta="MuiLink">
+        .MuiLink-root {
+            color: #FCFCFC;
+            cursor: pointer;
+            text-underline-offset: .23rem;
+        }
+
+        .MuiLink-root:hover {
+            color: #F4D092;
+            underline: none;
+            text-decoration: none;
+        }
+
+        .MuiLink-root.active {
+            color: #FCFCFC;
+            text-decoration: underline;
+        }
+
+        .MuiLink-root:hover.active {
+            color: #FCFCFC;
+        }
+
+        .MuiLink-underlineNone {
+            text-decoration: none;
+        }
+
+        .MuiLink-underlineHover {
+            text-decoration: none;
+        }
+
+        .MuiLink-underlineHover:hover {
+            text-decoration: underline;
+        }
+
+        .MuiLink-underlineAlways {
+            text-decoration: underline;
+        }
+
+        .MuiLink-button {
+            border: 0;
+            cursor: pointer;
+            margin: 0;
+            outline: 0;
+            padding: 0;
+            position: relative;
+            user-select: none;
+            border-radius: 0;
+            vertical-align: middle;
+            -moz-appearance: none;
+            background-color: transparent;
+            -webkit-appearance: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .MuiLink-button::-moz-focus-inner {
+            border-style: none;
+        }
+
+        .MuiLink-button.Mui-focusVisible {
+            outline: auto;
+        }
+    </style>
+    <style data-jss="" data-meta="MuiDrawer">
+        .MuiDrawer-root {
+            width: 250px;
+            flex-shrink: 0;
+        }
+
+        .MuiDrawer-docked {
+            flex: 0 0 auto;
+        }
+
+        .MuiDrawer-paper {
+            top: 0;
+            flex: 1 0 auto;
+            width: inherit;
+            height: 100%;
+            display: flex;
+            outline: 0;
+            padding: 0;
+            z-index: 7;
+            position: fixed;
+            overflow-y: auto;
+            flex-direction: column;
+            background-color: inherit;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .MuiDrawer-paperAnchorLeft {
+            left: 0;
+            right: auto;
+        }
+
+        .MuiDrawer-paperAnchorRight {
+            left: auto;
+            right: 0;
+        }
+
+        .MuiDrawer-paperAnchorTop {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: auto;
+            height: auto;
+            max-height: 100%;
+        }
+
+        .MuiDrawer-paperAnchorBottom {
+            top: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: auto;
+            max-height: 100%;
+        }
+
+        .MuiDrawer-paperAnchorDockedLeft {
+            border-right: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .MuiDrawer-paperAnchorDockedTop {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .MuiDrawer-paperAnchorDockedRight {
+            border-left: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .MuiDrawer-paperAnchorDockedBottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+        }
+    </style>
+    <style data-jss="" data-meta="makeStyles">
+        .jss6 {
+            z-index: 10;
+            background: transparent;
+            align-items: flex-end;
+            backdrop-filter: none;
+            justify-content: flex-end;
+        }
+
+        @media (min-width:600px) {
+            .jss6 {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        .jss7 {
+            margin-right: 16px;
+        }
+
+        @media (min-width:981px) {
+            .jss7 {
+                display: none;
+            }
+        }
+    </style>
+    <style data-jss="" data-meta="makeStyles">
+        @media (min-width:960px) {
+            .jss1 {
+                width: 0;
+                flex-shrink: 0;
+            }
+        }
+
+        .jss2 {
+            height: 100%;
+            overflow: auto;
+            flex-grow: 1;
+            background: #292929;
+            transition: margin 969ms cubic-bezier(0.4, 0, 0.6, 1) 0ms;
+            margin-left: 0;
+            padding-top: 40px;
+            background-size: cover;
+        }
+
+        .jss3 {
+            transition: margin 969ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+            margin-left: 0;
+        }
+
+        .jss4 {
+            min-height: 56px;
+        }
+
+        @media (min-width:0px) and (orientation: landscape) {
+            .jss4 {
+                min-height: 48px;
+            }
+        }
+
+        @media (min-width:600px) {
+            .jss4 {
+                min-height: 64px;
+            }
+        }
+
+        .jss5 {
+            width: 0;
+        }
+    </style>
+
+    <style>
+        .dvTzpa {
+    width: 100%;
+    background-color: rgb(236, 249, 255);
+    padding: 0px 20px;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+}
+.jss9 {
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+}
+.jss10 {
+    display: flex;
+    align-items: center;
+}
+.jss11 {
+    display: flex;
+    align-items: center;
+}
+.jss12 {
+    margin-top: 8px;
+    margin-right: 10px;
+}
+.eranTu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 500px;
+}
+.eranTu > div {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 48px;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+.jss14 {
+}
+.eranTu > div > a {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(50, 111, 174) !important;
+}
+.jss16 {
+    display: flex;
+    align-items: center;
+}
+.jss17 {
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+.vaNOZ {
+    height: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 1;
+    padding: 0px 16px;
+    outline: 0px;
+    background-color: rgb(239, 183, 0);
+    color: white;
+}
+.kVDhRe {
+    font-size: 24px;
+    color: rgb(6, 162, 239);
+    margin-top: 7px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+.jss19 {
+    width: 100%;
+}
+@media screen and (min-width: 1175px) {
+    .ffKIzH {
+    display: none;
+}
+}
+.ffKIzH {
+    transition: all 0.3s ease 0s;
+    height: 0px;
+    overflow: hidden;
+}
+.eranTu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 500px;
+}
+@media screen and (max-width: 1175px){
+    .dvTzpa > div:nth-child(1) > div:nth-child(1) > div > div {
+        width: fit-content;
+        margin-left: 10px;
+    }
+    .eranTu {
+        display: none;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: unset;
+        font-size: 16px;
+    }
+}
+.jss38 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    justify-content: space-between;
+}
+.lp-box-content-top .image-content {
+    width: 64px;
+    height: 64px;
+    position: relative;
+}
+.lp-box-content-top .image-content img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.lp-box-content-top .token-name {
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #156e9b;
+    margin-bottom: 4px;
+}
+.jss41 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lp-box-content-top .attr_title {
+    color: #156e9b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.lp-box-content-top .attr_cont {
+    color: #156e9b;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.lp-box-content-top .percentage_But {
+    width: 32px;
+    align-items: center;
+    border: 0;
+    border-radius: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: .03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0;
+    transition: background-color .2s ease 0s,opacity .2s ease 0s;
+    height: 32px;
+    padding: 0 16px;
+    background-color: transparent;
+    color: #efb700;
+    box-shadow: none;
+    margin-left: 4px;
+}
+.lp-box-content-top .percentage_But>svg {
+    align-self: center;
+    fill: #156e9b;
+    flex-shrink: 0;
+}
+.jss45 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.jss48 {
+    display: flex;
+    margin-top: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.lp-box-content-top .lock_amount {
+    align-items: center;
+    border-radius: 16px;
+    color: #fff;
+    display: inline-flex;
+    font-weight: 400;
+    white-space: nowrap;
+    height: 28px;
+    padding: 0 8px;
+    font-size: 14px;
+    background-color: #55b0dd;
+}
+.lp-box-content-top .lock_amount .key {
+    align-self: center;
+    flex-shrink: 0;
+    margin-right: 0.5em;
+}
+.jss51 {
+    padding-top: 16px;
+}
+.jss52 {
+    display: flex;
+    align-items: center;
+}
+.lp-box-content-top .attr_title_s_l {
+    color: #55b0dd;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    padding-right: 4px;
+    font-size: 12px;
+}
+.lp-box-content-top .attr_title_s_d {
+    color: #326fae;
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.jss53 {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    justify-content: space-between;
+}
+.lp-box-content-top .attr_lock_amount {
+    color: #c0cacd;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.lp-box-content-top .attr_lock_but:disabled {
+    background-color: #e9eaeb;
+    border-color: #e9eaeb;
+    box-shadow: none;
+    color: #c0cacd;
+    cursor: not-allowed;
+}
+.lp-box-content-top .attr_lock_but {
+    align-items: center;
+    border: 0;
+    border-radius: 16px;
+    box-shadow: inset 0 -1px 0 0 rgb(14 14 44 / 40%);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: .03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0;
+    transition: background-color .2s ease 0s,opacity .2s ease 0s;
+    height: 48px;
+    padding: 0 24px;
+    background-color: #efb700;
+    color: #fff;
+}
+.jss54 {
+    display: flex;
+    align-items: center;
+}
+.jss55 {
+    margin-top: 8px;
+}
+.iMuHwv {
+    width: 100%;
+    height: 48px;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 1;
+    padding: 0px 16px;
+    outline: 0px;
+    background-color: rgb(239, 183, 0);
+    color: white;
+}
+.lp-box-content-bottom {
+    padding: 24px;
+    border-top: 2px solid #dfeff7;
+    overflow: hidden;
+}
+.lp-box-content-bottom .lp-box-details-text>div:first-child {
+    cursor: pointer;
+}
+.jss59 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lp-box-content-bottom .lp-box-details-text>div:first-child div {
+    color: #efb700;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.lp-box-content-bottom .lp-box-details-text>div:first-child svg {
+    fill: #efb700;
+}
+.bJypVO {
+    width: 100%;
+    font-size: calc(0.8329vw);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(11, 36, 56);
+    padding: 0px 20px;
+}
+.bJypVO > div {
+    width: 100%;
+}
+.fnmrFY {
+    margin-bottom: 24px;
+}
+.fnmrFY > svg {
+    align-self: center;
+    fill: rgb(21, 110, 155);
+    flex-shrink: 0;
+}
+.ecqcee {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 42px;
+}
+.ecqcee > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.ecqcee > ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.ecqcee > ul li {
+    color: rgb(89, 124, 179);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.ecqcee > ul span {
+    color: rgb(172, 200, 235);
+}
+.jss117 {
+    display: flex;
+    align-items: center;
+}
+.iRfAVw {
+    padding: 24px 0px;
+    margin-bottom: 24px;
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border: none;
+}
+.iRfAVw > div {
+    display: flex;
+    order: 1;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.cYfxIo {
+    margin-right: 20px;
+}
+.cYfxIo a {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+}
+.MuiLink-underlineNone {
+    text-decoration: none;
+}
+.MuiLink-root {
+    color: #FCFCFC;
+    cursor: pointer;
+    text-underline-offset: 0.23rem;
+}
+.MuiTypography-colorPrimary {
+    color: #FCFCFC;
+}
+.MuiTypography-root {
+    margin: 0;
+}
+.cYfxIo img {
+    transition: transform 0.3s ease 0s;
+    margin-right: 8px;
+}
+.cYfxIo div {
+    color: rgb(173, 195, 210);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.hbZoPK {
+    -webkit-box-align: center;
+    align-items: center;
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0px;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    height: 32px;
+    padding: 0px 16px;
+    background-color: rgb(239, 183, 0);
+    color: white;
+    text-decoration: none;
+}
+.bJypVO {
+    width: 100%;
+    font-size: calc(0.8329vw);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: rgb(11, 36, 56);
+    padding: 0px 20px;
+}
+@media screen and (min-width: 576px){
+    .bJypVO {
+        padding: 35px 40px 32px;
+        margin-bottom: 0px;
+    }
+    .bJypVO > div {
+    width: 1200px;
+}
+.fnmrFY {
+    display: none;
+}
+.ecqcee {
+    order: 1;
+    flex-direction: row;
+    margin-bottom: 36px;
+}
+.iRfAVw {
+    padding: 0px;
+    margin-bottom: 0px;
+    order: 3;
+    flex-direction: row;
+}
+.iRfAVw > div {
+    order: 2;
+    margin-bottom: 0px;
+}
+}
+@media screen and (min-width: 852px){
+    .ecqcee > ul {
+        margin-bottom: 0px;
+    }
+}
+@media screen and (min-width: 968px){
+
+    .lp-box-content-top .attr_lock_amount {
+        font-size: 20px;
+    }
+}
+    </style>
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div class="app false false light">
+            <div>
+                <div></div>
+            </div>
+            <div class="MuiBox-root jss8 sc-kHOZwM dvTzpa">
+                <div class="MuiBox-root jss9">
+                    <div class="MuiBox-root jss10">
+                        <div class="MuiBox-root jss11">
+                            <div class="MuiBox-root jss12"><img src="images/logo.png" width="40px" height="100%"
+                                    alt="logo"></div>
+                            <div class="MuiBox-root jss13 sc-cZMNgc eranTu">
+                                <div class="MuiBox-root jss14"><a href="/reward"
+                                        style="color: white; text-decoration: unset;">Farms</a></div>
+                                <div class="MuiBox-root jss15"><a href="/pools"
+                                        style="color: white; text-decoration: unset;">Pools</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MuiBox-root jss16">
+                        <div class="MuiBox-root jss17">
+                            <div class="wallet-menu" id="wallet-menu">
+                                <div class="MuiBox-root jss18 sc-bBHxTw vaNOZ pending-txn-container"
+                                    variant="contained">Connect Wallet</div>
+                            </div>
+                            <div class="sc-fbyfCU kVDhRe"><svg stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+                                </svg></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="MuiBox-root jss19 sc-GEbAx ffKIzH">
+                        <div class="MuiBox-root jss20 sc-cZMNgc eranTu">
+                            <div class="MuiBox-root jss21"><a href="/reward"
+                                    style="color: white; text-decoration: unset;">Farms</a></div>
+                            <div class="MuiBox-root jss22"><a href="/pools"
+                                    style="color: white; text-decoration: unset;">Pools</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="jss1">
+                <div class="sidebar" id="sidebarContent" style="display: none;">
+                    <div class="MuiDrawer-root MuiDrawer-docked">
+                        <div
+                            class="MuiPaper-root MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft MuiPaper-elevation0">
+                            <div class="MuiPaper-root dapp-sidebar MuiPaper-elevation0 MuiPaper-rounded">
+                                <div class="MuiBox-root jss23 dapp-sidebar-inner">
+                                    <div class="dapp-menu-top">
+                                        <div class="MuiBox-root jss24 branding-header"><a
+                                                class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorPrimary"
+                                                href="https://crypstarter.finance/" target="_blank"><img
+                                                    src="images/logo.png" alt=""
+                                                    style="width: 120px; margin-top: 30px;"></a>
+                                            <div class="MuiBox-root jss25">
+                                                <h3 class="MuiTypography-root sc-eLwHnm fOqvCs MuiTypography-h3">ETH DOX
+                                                </h3>
+                                            </div>
+                                        </div>
+                                        <div class="dapp-menu-links">
+                                            <div class="dapp-nav" id="navbarNav"><a
+                                                    class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorPrimary"
+                                                    id="stake-nav" href="/reward">
+                                                    <h6
+                                                        class="MuiTypography-root sc-eLwHnm fOqvCs fxCenter MuiTypography-h6">
+                                                        <svg width="17" height="18" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall"
+                                                            focusable="false" aria-hidden="true">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M15.5388 6.54545C15.8658 6.54545 16.111 6.70909 16.2745 7.03636C16.438 7.28182 16.3563 7.60909 16.1928 7.85455L8.01833 17.6727C7.85484 17.9182 7.60961 18 7.36437 18C7.28263 18 7.11914 18 7.0374 17.9182C6.71042 17.8364 6.46518 17.4273 6.54693 17.1L7.28263 11.4545H0.824816C0.497838 11.4545 0.252604 11.2909 0.0891154 11.0455C-0.0743736 10.7182 0.00737089 10.3909 0.17086 10.1455L8.34531 0.327273C8.59054 0 8.99926 -0.0818182 9.32624 0.0818182C9.65322 0.163636 9.89845 0.572727 9.81671 0.9L9.08101 6.54545H15.5388ZM8.99924 10.7175L8.50877 14.4811L13.7404 8.18111H8.10005C7.93656 8.18111 7.69133 8.09929 7.52784 7.93566C7.4461 7.77202 7.36435 7.52657 7.36435 7.28111L7.77307 3.51748L2.54143 9.81747H8.1818C8.42703 9.81747 8.67226 9.89929 8.83575 10.0629C8.9175 10.2266 8.99924 10.472 8.99924 10.7175Z">
+                                                            </path>
+                                                        </svg>Reward</h6>
+                                                </a><a
+                                                    class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorPrimary"
+                                                    id="stake-nav" href="/pool">
+                                                    <h6
+                                                        class="MuiTypography-root sc-eLwHnm fOqvCs fxCenter MuiTypography-h6">
+                                                        <svg width="51" height="17" viewBox="0 0 20 20" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            class="MuiSvgIcon-root MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall"
+                                                            focusable="false" aria-hidden="true">
+                                                            <rect x="1.29541" y="1.20508" width="49" height="15"
+                                                                rx="7.5" fill="transparent" stroke="currentColor">
+                                                            </rect>
+                                                            <path
+                                                                d="M22.2808 12.7051H21.4008L16.6488 6.62208V12.7051H15.6258V4.89508H16.5168L21.2688 10.9781V4.89508H22.2808V12.7051ZM26.5395 12.8151C25.6962 12.8151 25.0105 12.5437 24.4825 12.0011C23.9545 11.4584 23.6905 10.7764 23.6905 9.95508C23.6905 9.14108 23.9582 8.46274 24.4935 7.92008C25.0288 7.37008 25.7145 7.09508 26.5505 7.09508C27.2912 7.09508 27.9108 7.34441 28.4095 7.84308C28.9155 8.33441 29.1685 9.00541 29.1685 9.85608C29.1685 9.96608 29.1648 10.0614 29.1575 10.1421H24.6475C24.6622 10.6554 24.8455 11.0844 25.1975 11.4291C25.5568 11.7737 26.0078 11.9461 26.5505 11.9461C27.3205 11.9461 27.8925 11.6271 28.2665 10.9891L29.0145 11.5061C28.4792 12.3787 27.6542 12.8151 26.5395 12.8151ZM24.7135 9.37208H28.2005C28.1272 8.93208 27.9328 8.58374 27.6175 8.32708C27.3095 8.06308 26.9428 7.93108 26.5175 7.93108C26.0848 7.93108 25.6962 8.06308 25.3515 8.32708C25.0142 8.58374 24.8015 8.93208 24.7135 9.37208ZM35.1644 12.7051L33.8004 8.75608L32.4474 12.7051H31.6114L29.7414 7.20508H30.7314L32.0624 11.2201L33.4374 7.20508H34.1634L35.5384 11.2201L36.8694 7.20508H37.8704L36.0004 12.7051H35.1644Z"
+                                                                fill="inherit"></path>
+                                                        </svg>Pool</h6>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                    <div class="MuiBox-root jss26 dapp-menu-bottom">
+                                        <div class="dapp-menu-external-links"></div>
+                                        <div class="dapp-menu-social">
+                                            <div class="social-row "><a href="#" target="_blank" class="bottomImgs"
+                                                    style="margin-left: 5px; margin-right: 15px;"><img
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAPKADAAQAAAABAAAAPAAAAACL3+lcAAADaUlEQVRoBe2Z32uNYRzAd+ZXEWvyY2lESbML5WaWkNSSP4HdSHMnF9xgpSSUUkpRboiVciFukOLUlE3RktFcbHKjNmyaMGmOz/d03nrPc7b3PH2f5313Lp5vfXp+fn883/O+z3nOc+rqgoQMhAyEDIQMhAyEDIQMhAyEDIQMaDKQ0yilqVMoFNZgfxMshk8wlMvlpinnVghsgc8IsLcX+uAfxOUzjbMgCSgT+nKwvawzrQaOrsM+V/vYqIcrUE0+MmGz+KNsgP0wABdcY6iqj5Ol8LNEe1WFhAnYuAy2MsbEPPwtKYxSLk8w72cIJ+0lh1J8g1aNZfQ6xIBSxtErPs6Uy2z919tONOatj7Ulw09wui3WZ1s9YzvRmPeF9lFowe8Dyk5j3G8TJ51gijxmp8AqicxbaxpQtu/6Xd0M1ghsV0JwecaaZ1Ar62KObDqu8ggDFbt3mSMfDZw0wp+EaL8zdhoaZvPH2LEEfZuhHiZ5/WqcLdZiP87uWUQlC78KFTs5fUcs9JOmrEsMcJZB9UmLSNqw2QdW7yzzxqAXXsIItMA50EoTJ7BRrbJKj0VfTPoIUhybxvY8TdDzNUo4O4SenHdvQSN0QZYynun5mgUfiH16U7F6VtVBbXZt3z/Tfn+sY1GsnlV1WOtItWAeJ9l0erVOPejltTZUCy45O6l16kHvqdaGesF8yi9w2qN17KAnX2+Zv8NRvAep3I4aGZUPSXYhI1+VbtiW5dahG35ktEVvrYzCvkf9SMdc7KT+BrpBvXvG7CVVn/HpDiRNqDamOngYRuXgcd/oS6t5ydWw+iwdOZZHmvo7KN43Rf0plK+w2Tan72+0KBa9BeSXUVryG8Otkb+aKAloN0ymtOLjNbFIMwgW2wQ3wLxbpkstz9H0sbma4fprE6DcG8uN5DC4yHuUm/xFlpIlgtwI/S4rRXcQVqcUoh+zBLgBroHrT8a32FjlJypHKwSyRExQLoRmkEv5E5CH6B8Bqmq5iaZ8t9eGEIws0PVxnSkbI3R21MYqjSgITP4A64IhcJUJDJyH9O+XjXWomgS6B+7AV7CVKSY+hsNQfEVUzhVKzkfLyCeBiy05De0AuTNeCStA+idhAj6A/JZ9zRHxF2WQkIGQgZCBkIGQgZCBkIGQgZCBkIGQgZCBmsjAf/vHyzK2T5MBAAAAAElFTkSuQmCC"
+                                                        alt="" class="bottomImgs2"
+                                                        style="width: 30px; height: 30px;"></a><a href="#"
+                                                    target="_blank" class="bottomImgs"
+                                                    style="margin-left: 15px; margin-right: 15px;"><img
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAPKADAAQAAAABAAAAPAAAAACL3+lcAAAEUklEQVRoBe2ZS0hUURjHG8kyiyyLLCPKRURCqC16kERQtjAiqE2LKDCwhUshihbVIiiKQiKCyJCKMNrkylUtgqDHoidZSURaoWUQvSR7TL9PZ/LOnXvOnDtzrg84H/y753yP//fozp25xwkTnLgJuAm4CbgJuAm4CbgJuAlEM4FYNLTDrPF4fBK7taAWLANzE5jO9SPoAe/BbdAei8Uecx1/QqPl4DL4BsLIW5wPghnjomsKXQxawR+Qi3wm+DCYOmYbp7idIOz/KCFa6cAqH4WxIxQ0GbRoy87N2E943ZjomEImguu59WMcvWdUm6bMPHDFuNzcHeW5sGPUmia5PFT88hzFUdDrN1ja/4JnxYg3TdIqIMn9sk2KQTkLXPUbDfeP8WsEkuN0QMwzdJNHrGmS5YNHAYXILVfoLYR9HZAn92/wEFwD58BJ0Azk898JRHrAdvD/BxHrahAkx7x5Il2TfXdQBei6gxKjnwNSBuH3w14MigL0JeiDZABlqd8/kj2JngRVgK7LdkI4VQ1LCUds50vjI8kGyaQQmfqUtKAcFPCtVOQS9SegvXP8qfP8CoP9Lo1PHNtsjT0bk46vGMJN2ZAaxzDRLhmtQvYZE4VwJJc86FRyJgRVOFcylqmyov8ArN7OyergXQr+giB5mvQzuYa9pas1pG28y/Zr7Fmb4O0g+KGCQF5DjV8lwzas+xq4oyjIlvqugki+s+cpbGnqsA3PTGMYVvQNLyNZ6fjl4WUkNhuO5PPr6ULHH1nDugHpvj48dWe91PHr6kpJaOyYiJLDNpUsVBks6RdpeHR1pYTZbHh9CrPFDU9h+TW1SkP5TmNLMYVtuCslOnVTSWFlqSpru1qYVK+DA9h6rWXyEtFQEQh6B0Y9KBe9/jbWsMqpytMh+sB/b9rIo+Qg5a3AtENK+TW0XRmchQG+45p8YtqbBa15CAkOZCjgJ/Z6c8ZgTzjkJFQOCTJJRTCDJS3ZFwB5DUzKHRZnQV9SkbjKnbAFhHp9w18OAurBC5BJ7ltqS09DFRc8lTxgPR9MAm0efXIpn3nx2a9ixSaxcq7dCcLIVhWnVT0VLQFyfpUUOamUQ7tCcC+p9F3X6YrA94TPP9NWcob9ltGVoLeR7JSvolaJQFcKXvtsuq+zwUSJOF+YcisPxxp9hZatJJSHivdsS4qokjRcC0ADkM+2PGUrTdLj9x2YSJMJn3UfKqsA/Z4Kb7DOzzYRsW88XKqlDLkg2xw5x5G8BvibXo7Oe7ZsVCAxmRqWJ7fxu2/OzakIKGIj8DbNNv4VyB+3v4AWVaxXj5/uvOwldt0BhJcq+jXFrAavQJAY/eQksDsoGF07KIm+i5AZKGoaaAZ+uWRCRZDcEV75wabBJHZUfShyDZAfIfLkFjlvUhB+yTtE/hbVBKJ+xzYpy9yHguUHyiFQbhKF32bQCIyPbEx4nY+bgJuAm4CbgJuAm4CbgJuAm0AEE/gHEiYpqtrJfbwAAAAASUVORK5CYII="
+                                                        alt="" class="bottomImgs2"
+                                                        style="width: 30px; height: 30px;"></a><a href="#"
+                                                    target="_blank" class="bottomImgs"
+                                                    style="margin-left: 15px; margin-right: 15px;"><img
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAPKADAAQAAAABAAAAPAAAAACL3+lcAAADL0lEQVRoBe2YO2gUURSGs6L4IFoEBW00xkRBFOwVxC5okcIugim0E62NQgQbwUosbFTwgXYWFj46tbCwVRRRXDWCigkiUfNAcP3uOnfncPZO5s7uLPg4F37m3HPP/985/8zOJNPVZcMcMAfMAXPAHDAHzAFzwBwwB8wBc8AcMAfMAXNAOFCr1TaBo+A+qIIZMAkeg6tgL1gmKFEhnC3gNvgCnoPDYEEWmbUzYDRrve084v3gBogZnyg6BBbGbEzdDvAd6HGZREVrkOsGs8Dtk2mK5kXPER0Bc6DoeARh9Xwbsd4DJuYRPqL51A6K+m16va05wmNCvJVwHFJ/1kmwdi5HdIr1VZLP/LjgHJBrbcWIDgvhdsKnkJfrkyHnru50hPAxyaXe3ep+nJZroTjqnketF/KFkEALuc1wzgZ4w+SWBvI6pa/ielHQK+JgGNUwzJMg5mSCmwSS+zFxq8oPqnnWtA/ugFhckxGLdBrmNoz4Osr3pZRSIrdv4zXCHu7pu7OA8i5RuzIjFuk0zG2Y0iEQU5eqxkV7aHRRUrqWY3ccrV7lfhZ+yDsv950f08hur1zycQV62xPNjQW16/UY5s5/seAuEXEwjGm4L8gsJ7khkekpKOfrdYPyagclYxqWD4WgSBtJr930msrR9PW6QT1vkolpuIn0NydiGv7QwQbfJ9pfC+7h62cUT8/VctzT91UTq7xENZH6XFDS188qXikN31GiZU2nEHqYiL0oKFqvr1QqP+HNCa42QCz9DmNu6ZuUOuGyxy1O+EciOs7xW4ENnolaeVWnRT4Y5jbMSb2FeS3Ibj3pDDzl6exRI37g5xHHe6JmQsSTIg6GuQ0nrDGO0smgWIHkFZp8ourvqnnWtAr3pVj8KOLcB2xUw2zwBtGDQrid0N2OTf/Ik7sOYky9qDZ/LeYyFuk0jGrYldO0O6ETKbWl6B2sIbT8a6UhQs49eS81EuHA8c6rJfnAk7Eqa3HK368joJOfeNy3qazRdGdQ2LlPPN4jNhkA/8dHPN+0O9K0+0w7Cv7tz7SyaYvNAXPAHDAHzAFzwBwwB8wBc8AcMAfMAXPAHPjjHPgFiTR2n3K/BMgAAAAASUVORK5CYII="
+                                                        alt="" class="bottomImgs2"
+                                                        style="width: 30px; height: 30px;"></a><a href="#"
+                                                    target="_blank" class="bottomImgs"
+                                                    style="margin-left: 15px; margin-right: 15px;"><img
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAPKADAAQAAAABAAAAPAAAAACL3+lcAAADRklEQVRoBe2YXYgNYRjHz9nVarO+Nsq2uVhl1VJYF+QkSbK54YpwIYkiaS82ts3HlTt7obgRClGUSFy50JYLWsrasApLyccNQlgbx+/RmZp9d+aceWfmzM7heerXvB/P+87//5xzZs5MJqOhFdAKaAW0AloBrYBWQCugFdAK/BcVyOfz8+EYvIQBaPnnjGNqAmyDu2DGCRvD42ySk87F2SLOuR02wUSf89f4jHsOp84wJsWYGNwBrZ6qRw6+HtmtkB5GF8NJ+Ao2sa5CLGYyuJoCu6HPxqGR25h6wwjOwRn4Zog3ux8Z2AU7zYlC/21qzSKwHtrhUUFsqcMVEhpgGXzySb6WOsMIXQ7n4QcEifckrRcjHNdAsW/BgVQYRuR06ICnYBNnSa4vmN1I+2eJxW1jZhhhWVgJF2EIbOIVyasd8bTlN/srwAbTnDWJHRE1AzrhWQCBZspvBuRvYp0jmHaXmeTTH3TWlP2IgCpog8swDGHiCYtybrH0j1hsdMm9tixtxDTCfpA/7mFDCnQYxjsiaVfDKbCJvc762I+oqIOjEPbTdIzcp7HALZB+Dcg3xTZWuPeJtY2SQ7ZqjPzv9PdBtVsYfXkKugm2Ib/9Se69Ym2z+UJ4bKuqkN/DcbYpiDH5I3KnkGN7GDD3i72PIrnt5KAbBqFUfCZBbi9ZUwxjDdAPYeOcuWfZ+yhtBbn4yNXWjBsMzPQSwfgseG4usOzv8do7sTHEtoBcvW/DZr8TMzcP3kDUWOp3jtSM43AJfIjqlPVyp6hNjTEvIQhcBbYP9izxjAde5wg6VvZXPEhuRsx1sHr3VMTAvSJzJaeqSmZET2hii7jMipreKJKSMDw1ikCPtak3/Pf51kN4mKEhFvWHWeisGctP+IUjwuLYl81mhy3yR6UmYdjrEz6IkjnQPUpR8YFIX+fiW8c0y1X6tHFz6XJvzdxakLeTQWKLe20q27i46nLS6SWS+SbodeX5Ned6rU/VGMrlaUmi6AM78/JcfFwSfeIL40n8BKPVD5EXYGvQXcjdAPKkZUZP0D0qLg+nzfDQcNxRcUZsBGO2FuSl3ju4BZNt1muuVkAroBXQCmgFtAJaAa2AVkAroBXQCthU4A8vpkvqkZJrWQAAAABJRU5ErkJggg=="
+                                                        alt="" class="bottomImgs2"
+                                                        style="width: 30px; height: 30px;"></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="jss2 false">
+                <div id="landing-view">
+                    <div class="MuiBox-root jss27 title-box">
+                        <div class="MuiBox-root jss28 title-box-view">
+                            <h1>FARM</h1>
+                            <h2>Stake LP to earn Shiba King.</h2>
+                        </div>
+                    </div>
+                    <div class="MuiBox-root jss29 warning-box"><svg viewBox="0 0 24 24" class="warning-box-icon"
+                            color="text" width="20px" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4.47 20.9999H19.53C21.07 20.9999 22.03 19.3299 21.26 17.9999L13.73 4.98993C12.96 3.65993 11.04 3.65993 10.27 4.98993L2.74 17.9999C1.97 19.3299 2.93 20.9999 4.47 20.9999ZM12 13.9999C11.45 13.9999 11 13.5499 11 12.9999V10.9999C11 10.4499 11.45 9.99993 12 9.99993C12.55 9.99993 13 10.4499 13 10.9999V12.9999C13 13.5499 12.55 13.9999 12 13.9999ZM13 17.9999H11V15.9999H13V17.9999Z">
+                            </path>
+                        </svg>
+                        <div class="MuiBox-root jss30 warning-box-title">WARNING:</div>
+                        <div class="MuiBox-root jss31 warning-box-message1">STAKING POOL SHIBA KING START SOON</div>
+                        <div class="MuiBox-root jss32 warning-box-message2">Contact an administrator with any questions
+                            or concerns.</div>
+                    </div>
+                    <div class="MuiBox-root jss33 lp-container">
+                        <div class="MuiBox-root jss34 lp-boxes">
+                            <div class="MuiBox-root jss35 lp-box">
+                                <div class="MuiBox-root jss36 lp-box-content">
+                                    <div class="MuiBox-root jss37 lp-box-content-top">
+                                        <div class="MuiBox-root jss38">
+                                            <div class="MuiBox-root jss39 image-content"><img src="./images/bnb.png"
+                                                    width="32" height="32"><img src="./images/logo.png" width="50"
+                                                    height="50"></div>
+                                            <div class="MuiBox-root jss40 token-name">SHIBA KING-BNB</div>
+                                        </div>
+                                        <div class="MuiBox-root jss41">
+                                            <div class="MuiBox-root jss42 attr_title">APR:</div>
+                                            <div class="MuiBox-root jss43 attr_cont">32%<div
+                                                    class="MuiBox-root jss44 percentage_But"><svg viewBox="0 0 24 24"
+                                                        width="18px" color="text" xmlns="http://www.w3.org/2000/svg"
+                                                        class="sc-bdvvtL cQhkZ">
+                                                        <path
+                                                            d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z">
+                                                        </path>
+                                                        <path d="M11.25 7.72H6.25V9.22H11.25V7.72Z"></path>
+                                                        <path d="M18 15.75H13V17.25H18V15.75Z"></path>
+                                                        <path d="M18 13.25H13V14.75H18V13.25Z"></path>
+                                                        <path d="M8 18H9.5V16H11.5V14.5H9.5V12.5H8V14.5H6V16H8V18Z">
+                                                        </path>
+                                                        <path
+                                                            d="M14.09 10.95L15.5 9.54L16.91 10.95L17.97 9.89L16.56 8.47L17.97 7.06L16.91 6L15.5 7.41L14.09 6L13.03 7.06L14.44 8.47L13.03 9.89L14.09 10.95Z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <div class="MuiBox-root jss45">
+                                            <div class="MuiBox-root jss46 attr_title">Earn:</div>
+                                            <div class="MuiBox-root jss47 attr_cont">Shiba King</div>
+                                        </div>
+                                        <div class="MuiBox-root jss48">
+                                            <div class="MuiBox-root jss49 attr_title">Withdraw Lock:</div>
+                                            <div class="MuiBox-root jss50 lock_amount"><svg viewBox="0 0 330 330"
+                                                    width="12px" color="secondary" xmlns="http://www.w3.org/2000/svg"
+                                                    class="key">
+                                                    <path
+                                                        d="M65,330h200c8.284,0,15-6.716,15-15V145c0-8.284-6.716-15-15-15h-15V85c0-46.869-38.131-85-85-85 S80.001,38.131,80.001,85v45H65c-8.284,0-15,6.716-15,15v170C50,323.284,56.716,330,65,330z M110.001,85 c0-30.327,24.673-55,54.999-55c30.327,0,55,24.673,55,55v45H110.001V85z">
+                                                    </path>
+                                                </svg>15</div>
+                                        </div>
+                                        <div class="MuiBox-root jss51">
+                                            <div class="MuiBox-root jss52"><span class="attr_title_s_l">shiba
+                                                    king</span><span class="attr_title_s_d"> earned</span></div>
+                                            <div class="MuiBox-root jss53"><span
+                                                    class="attr_lock_amount">0.000</span><button disabled=""
+                                                    class="attr_lock_but">Harvest</button></div>
+                                            <div class="MuiBox-root jss54"><span class="attr_title_s_l">shiba
+                                                    king-bnb</span><span class="attr_title_s_d"> staked</span></div>
+                                            <div class="MuiBox-root jss55">
+                                                <div class="wallet-menu" id="wallet-menu">
+                                                    <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
+                                                        variant="contained">Connect Wallet</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="MuiBox-root jss57 lp-box-content-bottom">
+                                        <div class="MuiBox-root jss58 sc-cxpSdN gxMVeU lp-box-details-text">
+                                            <div class="MuiBox-root jss59">
+                                                <div class="MuiBox-root jss60">Details</div><svg viewBox="0 0 24 24"
+                                                    color="text" width="20px" xmlns="http://www.w3.org/2000/svg"
+                                                    class="sc-bdvvtL cQhkZ">
+                                                    <path
+                                                        d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root jss35 lp-box">
+                                <div class="MuiBox-root jss36 lp-box-content">
+                                    <div class="MuiBox-root jss37 lp-box-content-top">
+                                        <div class="MuiBox-root jss38">
+                                            <div class="MuiBox-root jss39 image-content"><img src="./images/bnb.png"
+                                                    width="32" height="32"><img src="./images/logo.png" width="50"
+                                                    height="50"></div>
+                                            <div class="MuiBox-root jss40 token-name">SHIBA KING-BNB</div>
+                                        </div>
+                                        <div class="MuiBox-root jss41">
+                                            <div class="MuiBox-root jss42 attr_title">APR:</div>
+                                            <div class="MuiBox-root jss43 attr_cont">32%<div
+                                                    class="MuiBox-root jss44 percentage_But"><svg viewBox="0 0 24 24"
+                                                        width="18px" color="text" xmlns="http://www.w3.org/2000/svg"
+                                                        class="sc-bdvvtL cQhkZ">
+                                                        <path
+                                                            d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z">
+                                                        </path>
+                                                        <path d="M11.25 7.72H6.25V9.22H11.25V7.72Z"></path>
+                                                        <path d="M18 15.75H13V17.25H18V15.75Z"></path>
+                                                        <path d="M18 13.25H13V14.75H18V13.25Z"></path>
+                                                        <path d="M8 18H9.5V16H11.5V14.5H9.5V12.5H8V14.5H6V16H8V18Z">
+                                                        </path>
+                                                        <path
+                                                            d="M14.09 10.95L15.5 9.54L16.91 10.95L17.97 9.89L16.56 8.47L17.97 7.06L16.91 6L15.5 7.41L14.09 6L13.03 7.06L14.44 8.47L13.03 9.89L14.09 10.95Z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <div class="MuiBox-root jss45">
+                                            <div class="MuiBox-root jss46 attr_title">Earn:</div>
+                                            <div class="MuiBox-root jss47 attr_cont">Shiba King</div>
+                                        </div>
+                                        <div class="MuiBox-root jss48">
+                                            <div class="MuiBox-root jss49 attr_title">Withdraw Lock:</div>
+                                            <div class="MuiBox-root jss50 lock_amount"><svg viewBox="0 0 330 330"
+                                                    width="12px" color="secondary" xmlns="http://www.w3.org/2000/svg"
+                                                    class="key">
+                                                    <path
+                                                        d="M65,330h200c8.284,0,15-6.716,15-15V145c0-8.284-6.716-15-15-15h-15V85c0-46.869-38.131-85-85-85 S80.001,38.131,80.001,85v45H65c-8.284,0-15,6.716-15,15v170C50,323.284,56.716,330,65,330z M110.001,85 c0-30.327,24.673-55,54.999-55c30.327,0,55,24.673,55,55v45H110.001V85z">
+                                                    </path>
+                                                </svg>15</div>
+                                        </div>
+                                        <div class="MuiBox-root jss51">
+                                            <div class="MuiBox-root jss52"><span class="attr_title_s_l">shiba
+                                                    king</span><span class="attr_title_s_d"> earned</span></div>
+                                            <div class="MuiBox-root jss53"><span
+                                                    class="attr_lock_amount">0.000</span><button disabled=""
+                                                    class="attr_lock_but">Harvest</button></div>
+                                            <div class="MuiBox-root jss54"><span class="attr_title_s_l">shiba
+                                                    king-bnb</span><span class="attr_title_s_d"> staked</span></div>
+                                            <div class="MuiBox-root jss55">
+                                                <div class="wallet-menu" id="wallet-menu">
+                                                    <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
+                                                        variant="contained">Connect Wallet</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="MuiBox-root jss57 lp-box-content-bottom">
+                                        <div class="MuiBox-root jss58 sc-cxpSdN gxMVeU lp-box-details-text">
+                                            <div class="MuiBox-root jss59">
+                                                <div class="MuiBox-root jss60">Details</div><svg viewBox="0 0 24 24"
+                                                    color="text" width="20px" xmlns="http://www.w3.org/2000/svg"
+                                                    class="sc-bdvvtL cQhkZ">
+                                                    <path
+                                                        d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="MuiBox-root jss35 lp-box">
+                                <div class="MuiBox-root jss36 lp-box-content">
+                                    <div class="MuiBox-root jss37 lp-box-content-top">
+                                        <div class="MuiBox-root jss38">
+                                            <div class="MuiBox-root jss39 image-content"><img src="./images/bnb.png"
+                                                    width="32" height="32"><img src="./images/logo.png" width="50"
+                                                    height="50"></div>
+                                            <div class="MuiBox-root jss40 token-name">SHIBA KING-BNB</div>
+                                        </div>
+                                        <div class="MuiBox-root jss41">
+                                            <div class="MuiBox-root jss42 attr_title">APR:</div>
+                                            <div class="MuiBox-root jss43 attr_cont">32%<div
+                                                    class="MuiBox-root jss44 percentage_But"><svg viewBox="0 0 24 24"
+                                                        width="18px" color="text" xmlns="http://www.w3.org/2000/svg"
+                                                        class="sc-bdvvtL cQhkZ">
+                                                        <path
+                                                            d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z">
+                                                        </path>
+                                                        <path d="M11.25 7.72H6.25V9.22H11.25V7.72Z"></path>
+                                                        <path d="M18 15.75H13V17.25H18V15.75Z"></path>
+                                                        <path d="M18 13.25H13V14.75H18V13.25Z"></path>
+                                                        <path d="M8 18H9.5V16H11.5V14.5H9.5V12.5H8V14.5H6V16H8V18Z">
+                                                        </path>
+                                                        <path
+                                                            d="M14.09 10.95L15.5 9.54L16.91 10.95L17.97 9.89L16.56 8.47L17.97 7.06L16.91 6L15.5 7.41L14.09 6L13.03 7.06L14.44 8.47L13.03 9.89L14.09 10.95Z">
+                                                        </path>
+                                                    </svg></div>
+                                            </div>
+                                        </div>
+                                        <div class="MuiBox-root jss45">
+                                            <div class="MuiBox-root jss46 attr_title">Earn:</div>
+                                            <div class="MuiBox-root jss47 attr_cont">Shiba King</div>
+                                        </div>
+                                        <div class="MuiBox-root jss48">
+                                            <div class="MuiBox-root jss49 attr_title">Withdraw Lock:</div>
+                                            <div class="MuiBox-root jss50 lock_amount"><svg viewBox="0 0 330 330"
+                                                    width="12px" color="secondary" xmlns="http://www.w3.org/2000/svg"
+                                                    class="key">
+                                                    <path
+                                                        d="M65,330h200c8.284,0,15-6.716,15-15V145c0-8.284-6.716-15-15-15h-15V85c0-46.869-38.131-85-85-85 S80.001,38.131,80.001,85v45H65c-8.284,0-15,6.716-15,15v170C50,323.284,56.716,330,65,330z M110.001,85 c0-30.327,24.673-55,54.999-55c30.327,0,55,24.673,55,55v45H110.001V85z">
+                                                    </path>
+                                                </svg>15</div>
+                                        </div>
+                                        <div class="MuiBox-root jss51">
+                                            <div class="MuiBox-root jss52"><span class="attr_title_s_l">shiba
+                                                    king</span><span class="attr_title_s_d"> earned</span></div>
+                                            <div class="MuiBox-root jss53"><span
+                                                    class="attr_lock_amount">0.000</span><button disabled=""
+                                                    class="attr_lock_but">Harvest</button></div>
+                                            <div class="MuiBox-root jss54"><span class="attr_title_s_l">shiba
+                                                    king-bnb</span><span class="attr_title_s_d"> staked</span></div>
+                                            <div class="MuiBox-root jss55">
+                                                <div class="wallet-menu" id="wallet-menu">
+                                                    <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
+                                                        variant="contained">Connect Wallet</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="MuiBox-root jss57 lp-box-content-bottom">
+                                        <div class="MuiBox-root jss58 sc-cxpSdN gxMVeU lp-box-details-text">
+                                            <div class="MuiBox-root jss59">
+                                                <div class="MuiBox-root jss60">Details</div><svg viewBox="0 0 24 24"
+                                                    color="text" width="20px" xmlns="http://www.w3.org/2000/svg"
+                                                    class="sc-bdvvtL cQhkZ">
+                                                    <path
+                                                        d="M8.11997 9.29006L12 13.1701L15.88 9.29006C16.27 8.90006 16.9 8.90006 17.29 9.29006C17.68 9.68006 17.68 10.3101 17.29 10.7001L12.7 15.2901C12.31 15.6801 11.68 15.6801 11.29 15.2901L6.69997 10.7001C6.30997 10.3101 6.30997 9.68006 6.69997 9.29006C7.08997 8.91006 7.72997 8.90006 8.11997 9.29006Z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="MuiBox-root jss113 sc-jrQzAO bJypVO">
+                <div class="MuiBox-root jss114">
+                    <div class="MuiBox-root jss115 sc-kDTinF fnmrFY"><svg viewBox="0 0 772 159" width="130px"
+                            color="text" xmlns="http://www.w3.org/2000/svg">
+                            <image href="/images/logo/logo-horizontal.png"></image>
+                        </svg></div>
+                    <div class="MuiBox-root jss116 sc-iqseJM ecqcee">
+                        <ul>
+                            <li>Total Value Locked</li><span style="font-size: 16px;">$0.00</span>
+                        </ul>
+                        <div class="MuiBox-root jss117"><img width="32px" src="./images/logo.png"></div>
+                    </div>
+                    <div class="MuiBox-root jss118 sc-crHmcD iRfAVw">
+                        <div class="MuiBox-root jss119">
+                            <div class="MuiBox-root jss120 sc-egiyK cYfxIo"><a
+                                    class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorPrimary"
+                                    href="https://pancakeswap.finance/swap?outputCurrency=0x1e9692ceb06f4fba63009caab19610577fe57b18"><img
+                                        width="24x" src="./images/logo.png">
+                                    <div class="MuiBox-root jss121">$0.00</div>
+                                </a></div><a
+                                href="https://pancakeswap.finance/swap?outputCurrency=0x1e9692ceb06f4fba63009caab19610577fe57b18"
+                                class="sc-bqiRlB hbZoPK">BUY SHIBA KING</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=UA-196137638-3&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async=""
+        src="http://www.googletagmanager.com/gtag/js?id=G-TKEFGWGLPM&amp;l=dataLayer&amp;cx=c"></script>
+    <script type="text/javascript" async=""
+        src="http://www.googletagmanager.com/gtag/js?id=G-8LPEK6KQVS&amp;l=dataLayer&amp;cx=c"></script>
+    <script>
+        ! function (e) {
+            function t(t) {
+                for (var n, a, f = t[0], l = t[1], p = t[2], i = 0, s = []; i < f.length; i++) a = f[i], Object
+                    .prototype.hasOwnProperty.call(o, a) && o[a] && s.push(o[a][0]), o[a] = 0;
+                for (n in l) Object.prototype.hasOwnProperty.call(l, n) && (e[n] = l[n]);
+                for (c && c(t); s.length;) s.shift()();
+                return u.push.apply(u, p || []), r()
+            }
+
+            function r() {
+                for (var e, t = 0; t < u.length; t++) {
+                    for (var r = u[t], n = !0, f = 1; f < r.length; f++) {
+                        var l = r[f];
+                        0 !== o[l] && (n = !1)
+                    }
+                    n && (u.splice(t--, 1), e = a(a.s = r[0]))
+                }
+                return e
+            }
+            var n = {},
+                o = {
+                    1: 0
+                },
+                u = [];
+
+            function a(t) {
+                if (n[t]) return n[t].exports;
+                var r = n[t] = {
+                    i: t,
+                    l: !1,
+                    exports: {}
+                };
+                return e[t].call(r.exports, r, r.exports, a), r.l = !0, r.exports
+            }
+            a.m = e, a.c = n, a.d = function (e, t, r) {
+                a.o(e, t) || Object.defineProperty(e, t, {
+                    enumerable: !0,
+                    get: r
+                })
+            }, a.r = function (e) {
+                "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {
+                    value: "Module"
+                }), Object.defineProperty(e, "__esModule", {
+                    value: !0
+                })
+            }, a.t = function (e, t) {
+                if (1 & t && (e = a(e)), 8 & t) return e;
+                if (4 & t && "object" == typeof e && e && e.__esModule) return e;
+                var r = Object.create(null);
+                if (a.r(r), Object.defineProperty(r, "default", {
+                        enumerable: !0,
+                        value: e
+                    }), 2 & t && "string" != typeof e)
+                    for (var n in e) a.d(r, n, function (t) {
+                        return e[t]
+                    }.bind(null, n));
+                return r
+            }, a.n = function (e) {
+                var t = e && e.__esModule ? function () {
+                    return e.default
+                } : function () {
+                    return e
+                };
+                return a.d(t, "a", t), t
+            }, a.o = function (e, t) {
+                return Object.prototype.hasOwnProperty.call(e, t)
+            }, a.p = "/";
+            var f = this["webpackJsonp@scaffold-eth/react-app"] = this["webpackJsonp@scaffold-eth/react-app"] || [],
+                l = f.push.bind(f);
+            f.push = t, f = f.slice();
+            for (var p = 0; p < f.length; p++) t(f[p]);
+            var c = l;
+            r()
+        }([])
+    </script>
+    <script src="js/2.cea06abe.chunk.js"></script>
+    <script src="js/main.5323115e.chunk.js"></script> -->
+
+    <style>
+        @font-face {
+            font-family: Comic;
+            font-style: normal;
+            font-weight: 400;
+            src: local('Comic'), url(fonts/Comic.ttf) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Kanit, sans-serif';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Kanit'), url(fonts/Kanit-Regular.ttf) format('woff')
+        }
+
+        @font-face {
+            font-family: 'Kanit, sans-serif';
+            font-style: normal;
+            font-weight: 700;
+            src: local('Kanit'), url(fonts/Kanit-Bold.ttf) format('woff')
+        }
+
+        * {
+            font-family: 'Kanit, sans-serif'
+        }
+    </style>
+    <div style="display:none">
+        <script async="" src="js_1"></script>
+        <script>
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-WNVZ6YBXVZ"), gtag(
+                "config",
+                "G-8LPEK6KQVS")
+        </script>
+    </div>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TKEFGWGLPM"></script>
+</body>
+<div class="shadowHost-findFont-extension" id="shadowHost-findFont-extension"></div>
+
+</html>
+<style>
+    @font-face {
+        font-family: Comic;
+        font-style: normal;
+        font-weight: 400;
+        src: local('Comic'), url(fonts/Comic.ttf) format('woff')
+    }
+
+    @font-face {
+        font-family: 'Kanit, sans-serif';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Kanit'), url(fonts/Kanit-Regular.ttf) format('woff')
+    }
+
+    @font-face {
+        font-family: 'Kanit, sans-serif';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Kanit'), url(fonts/Kanit-Bold.ttf) format('woff')
+    }
+
+    * {
+        font-family: 'Kanit, sans-serif'
+    }
+</style>
+<div style="display:none">
+    <script async src="js_1"></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-WNVZ6YBXVZ"), gtag("config",
+            "G-8LPEK6KQVS")
+    </script>
+</div>
