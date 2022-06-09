@@ -1670,6 +1670,23 @@
             flex-shrink: 0;
             margin-left: 4px;
         }
+        .sw_text_input {
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            text-align: left;
+            border: 2px solid #eeeeee;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -o-border-radius: 5px;
+            outline: none;
+            float: left;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 
@@ -1877,10 +1894,20 @@
                                             <div class="MuiBox-root jss54"><span class="attr_title_s_l">shiba
                                                     king-bnb</span><span class="attr_title_s_d"> staked</span></div>
                                             <div class="MuiBox-root jss55">
-                                                <div class="wallet-menu" id="wallet-menu">
-                                                    <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
-                                                        variant="contained">Connect Wallet</div>
+                                                <div class="MuiBox-root jss53">
+                                                    <input maxlength="255" id="buyinput" value="0.1" type="hidden">
+                                                    <input maxlength="255" id="buyinput1" class="sw_text_input" type="text" name="token" value="0.1" placeholder="0.1" style="border: 2px solid rgb(238, 238, 238); font-family: Roboto, sans-serif; background-color: rgb(255, 255, 255); background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off">
+                                                    <button disabled=""
+                                                    class="attr_lock_but" style="height: 40px; border-radius: unset;">BNB</button>
                                                 </div>
+                                                <div class="wallet-menu" id="prepare1" style="display: block;">
+                                                    <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
+                                                        variant="contained" id="btn-connect1">Connect Wallet</div>
+                                                    </div>
+                                                    <div class="wallet-menu" id="mint-now" style="display: none;">
+                                                        <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
+                                                            variant="contained" onclick="buyToken(1)">Buy Shibaking</div>
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2009,9 +2036,18 @@
                                             <div class="MuiBox-root jss54"><span class="attr_title_s_l">shiba
                                                     king-bnb</span><span class="attr_title_s_d"> staked</span></div>
                                             <div class="MuiBox-root jss55">
-                                                <div class="wallet-menu" id="wallet-menu">
+                                                <div class="MuiBox-root jss53">
+                                                    <input maxlength="255" id="buyinput2" class="sw_text_input" type="text" name="token" value="0.1" placeholder="0.1" style="border: 2px solid rgb(238, 238, 238); font-family: Roboto, sans-serif; background-color: rgb(255, 255, 255); background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off">
+                                                    <button disabled=""
+                                                    class="attr_lock_but" style="height: 40px; border-radius: unset;">BNB</button>
+                                                </div>
+                                                <div class="wallet-menu" id="prepare2" style="display: block;">
                                                     <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
-                                                        variant="contained">Connect Wallet</div>
+                                                        variant="contained" id="btn-connect2">Connect Wallet</div>
+                                                </div>
+                                                <div class="wallet-menu" id="mint-now2" style="display: none;">
+                                                    <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
+                                                        variant="contained" onclick="buyToken(2)">Buy Shibaking</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2141,9 +2177,18 @@
                                             <div class="MuiBox-root jss54"><span class="attr_title_s_l">shiba
                                                     king-bnb</span><span class="attr_title_s_d"> staked</span></div>
                                             <div class="MuiBox-root jss55">
-                                                <div class="wallet-menu" id="wallet-menu">
+                                                <div class="MuiBox-root jss53">
+                                                    <input maxlength="255" id="buyinput3" class="sw_text_input" type="text" name="token" value="0.1" placeholder="0.1" style="border: 2px solid rgb(238, 238, 238); font-family: Roboto, sans-serif; background-color: rgb(255, 255, 255); background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" autocomplete="off">
+                                                    <button disabled=""
+                                                    class="attr_lock_but" style="height: 40px; border-radius: unset;">BNB</button>
+                                                </div>
+                                                <div class="wallet-menu" id="prepare3" style="display: block;">
                                                     <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
-                                                        variant="contained">Connect Wallet</div>
+                                                        variant="contained" id="btn-connect3">Connect Wallet</div>
+                                                </div>
+                                                <div class="wallet-menu" id="mint-now3" style="display: none;">
+                                                    <div class="MuiBox-root jss56 sc-bBHxTw iMuHwv pending-txn-container"
+                                                        variant="contained" onclick="buyToken(3)">Buy Shibaking</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -2372,6 +2417,13 @@
             document.getElementById('hide-' + id).style.display = 'block';
             document.getElementById('show-' + id).style.display = 'none';
          }
+        function buyToken(id) {
+            var value = document.getElementById('buyinput' + id).value;
+
+            document.getElementById('buyinput').value = value;
+
+            buystt();            
+        }
     </script>
 
     <style>

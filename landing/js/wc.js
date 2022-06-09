@@ -87,8 +87,13 @@ async function fetchAccountData() {
 
     // Display fully loaded UI for wallet data
     document.querySelector("#prepare").style.display = "none";
+    document.querySelector("#prepare1").style.display = "none";
+    document.querySelector("#prepare2").style.display = "none";
+    document.querySelector("#prepare3").style.display = "none";
     document.querySelector("#connected").style.display = "block";
-    // document.querySelector("#mint-now").style.display = "block";
+    document.querySelector("#mint-now").style.display = "block";
+    document.querySelector("#mint-now2").style.display = "block";
+    document.querySelector("#mint-now3").style.display = "block";
 }
 
 
@@ -105,8 +110,13 @@ async function refreshAccountData() {
     // the user is switching acounts in the wallet
     // immediate hide this data
     document.querySelector("#connected").style.display = "none";
-    // document.querySelector("#mint-now").style.display = "none";
+    document.querySelector("#mint-now").style.display = "none";
+    document.querySelector("#mint-now2").style.display = "none";
+    document.querySelector("#mint-now3").style.display = "none";
     document.querySelector("#prepare").style.display = "block";
+    document.querySelector("#prepare1").style.display = "block";
+    document.querySelector("#prepare2").style.display = "block";
+    document.querySelector("#prepare3").style.display = "block";
 
     // Disable button while UI is loading.
     // fetchAccountData() will take a while as it communicates
@@ -173,8 +183,17 @@ async function onDisconnect() {
     // Set the UI back to the initial state
     // document.getElementById("address").innerHTML = "Not connected to wallet yet";
     document.querySelector("#prepare").style.display = "block";
+    document.querySelector("#prepare1").style.display = "block";
+    document.querySelector("#prepare2").style.display = "block";
+    document.querySelector("#prepare3").style.display = "block";
     document.querySelector("#connected").style.display = "none";
-    // document.querySelector("#mint-now").style.display = "none";
+    document.querySelector("#mint-now").style.display = "none";
+    document.querySelector("#mint-now2").style.display = "none";
+    document.querySelector("#mint-now3").style.display = "none";
+    document.getElementById("buyinput").value = "0.1";
+    document.getElementById("buyinput1").value = "0.1";
+    document.getElementById("buyinput2").value = "0.1";
+    document.getElementById("buyinput3").value = "0.1";
 }
 
 
@@ -184,6 +203,8 @@ async function onDisconnect() {
 window.addEventListener('load', async () => {
     init();
     document.querySelector("#btn-connect").addEventListener("click", onConnect);
+    document.querySelector("#btn-connect2").addEventListener("click", onConnect);
+    document.querySelector("#btn-connect3").addEventListener("click", onConnect);
     document.querySelector("#btn-disconnect").addEventListener("click", onDisconnect);
 });
 
